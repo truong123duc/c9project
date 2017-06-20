@@ -14,7 +14,8 @@ LocalStrategy   = require("passport-local"),
 var indexRoutes = require("./routes/index");
 var commentRoutes = require("./routes/comment");
 var campgroundRoutes = require("./routes/campgrounds");
-mongoose.connect("mongodb://localhost/yelp_camp_v3");
+// mongoose.connect("mongodb://localhost/yelp_camp_v3");
+mongoose.connect("mongodb://ductruong:123456@ds143131.mlab.com:43131/portfolio_ductruong");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
