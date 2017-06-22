@@ -12,3 +12,14 @@
 .delete-form{
     display: inline;
 }
+.navbar-nav > li > a{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-left: 2px;
+}
+.navbar-topmargin{
+    margin-top:10px;
+}
+#img-height{
+    height: 150px;
+}

@@ -6,7 +6,9 @@
              <h1>Welcome To YelpCamp!</h1>
              <p>View our hand-picked campgrounds from all over the world</p>
              <p>
-                <a class="btn btn-primary btn-large" href="/campgrounds/new">Add New Campground</a>
+                 <% if(currentUser){%>
+                     <a class="btn btn-primary btn-large" href="/campgrounds/new">Add New Campground</a>
+                 <% } %>
              </p>
          </div>
      </header>
@@ -15,7 +17,7 @@
         <% campgrounds.forEach(function(campground){ %>
             <div class="col-md-3 col-sm-6">
                 <div class="thumbnail">
-                   <img src="<%= campground.image %>">
+                   <img id="img-height" src="<%= campground.image %>">
                    <div class="caption">
                        <h4><%= campground.name %></h4>
                    </div>
