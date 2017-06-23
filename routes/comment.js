@@ -38,7 +38,7 @@ router.put("/:comment_id", middleware.checkCommentOwnerShip, function(req, res){
     })
 })
 //Comment create
-router.post("/",middleware.isLoggedIn, middleware.checkCommentOwnerShip, function(req, res){
+router.post("/",middleware.isLoggedIn, function(req, res){
     //look up campground using ID
     Campground.findById(req.params.id, function(err, campground){
        if(err){
