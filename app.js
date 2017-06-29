@@ -9,6 +9,7 @@ var express     = require("express"),
     passport    = require("passport"),
 LocalStrategy   = require("passport-local"),
     User        = require("./models/user"),
+    formidable  = require('formidable');
     seedDB      = require("./seeds");
 
 var indexRoutes = require("./routes/index");
